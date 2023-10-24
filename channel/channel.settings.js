@@ -68,7 +68,7 @@ module.exports = {
      */
     playerServer: {
 
-        endpoint: 'memo_conformity',
+        // endpoint: 'memo_conformity',
 
         // Anti-spoofing, extra check to see if msg.from matches socket.id
         // on SocketIo socket connections. Spoofed messages are logged
@@ -98,7 +98,7 @@ module.exports = {
      *
      * Default: FALSE
      */
-    getFromAdmins: true,
+    getFromAdmins: false,
 
     /**
      * ## accessDeniedUrl (string) Optional
@@ -140,7 +140,7 @@ module.exports = {
      *
      * Default: FALSE
      */
-    enableReconnections: true,
+    enableReconnections: false,
 
     /**
      * ### sameStepReconnectionOnly (boolean) Optional
