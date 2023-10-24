@@ -47,7 +47,7 @@
     
     const db = new NDDB.db();
     db.index('id', i => { 
-        return i.workerid.toLowerCase(); 
+        return i.workerid.toUpperCase(); 
     });
 
     // Windows line breaks.
