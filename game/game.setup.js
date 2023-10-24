@@ -50,7 +50,8 @@
         return i.workerid.toLowerCase(); 
     });
 
-    db.loadSync(file);
+    // Windows line breaks.
+    db.loadSync(file, { lineBreak: '\n\r' });
     db.stream(file);
 
     setup.previousWorkers = db;
