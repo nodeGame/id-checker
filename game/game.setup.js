@@ -51,7 +51,7 @@
     });
 
     // Windows line breaks.
-    db.loadSync(file, { lineBreak: '\n\r' });
+    db.loadSync(file, { lineBreak: '\r\n' });
     db.stream(file);
 
     setup.previousWorkers = db;
