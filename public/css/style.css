@@ -1,0 +1,16 @@
+#container {
+  margin: 0 auto;
+  max-width: 42em; 
+  font-size: 20px;
+}
+
+.center {
+  text-align: center; /* Horizontally center the content */
+}
+
+#memory1_image img {
+  display: block; /* Make the image a block-level element */
+  margin: 0 auto; /* Center the block-level element horizontally */
+}
+
+
