@@ -47,9 +47,9 @@
     
     const db = new NDDB.db();
     db.index('id', i => { 
-        return i.workerid; 
+        return i.workerid.toLowerCase(); 
     });
-    
+
     db.loadSync(file);
     db.stream(file);
 

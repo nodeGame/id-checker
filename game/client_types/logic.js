@@ -38,6 +38,10 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         node.on.data('id_checker', msg => {
             // console.log(msg);
             let wid = msg.data;
+            if (!wid) return;
+
+            wid = wid.toLowerCase();
+            
             // console.log(wid);
             let client = setup.previousWorkers.id.get(wid);
 
