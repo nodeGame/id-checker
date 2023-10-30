@@ -40,7 +40,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             let wid = msg.data;
             if (!wid) return;
 
-            wid = wid.toUpperCase();
+            wid = wid.toUpperCase().trim();
 
             // console.log(wid);
             let client = setup.previousWorkers.id.get(wid);
